@@ -115,3 +115,28 @@ kubectl get pods
 # ---------------------------------------------------
 
 minikube stop
+
+#viva
+1. What is Kubernetes?
+Kubernetes is an open-source container orchestration platform used to automate deployment, scaling, and management of containers.
+
+2. What is Minikube?
+Minikube is a lightweight local Kubernetes cluster used for learning and testing Kubernetes on a single machine.
+
+3. What is a Pod in Kubernetes?
+A Pod is the smallest deployable unit in Kubernetes that contains one or more containers.
+Example:
+kubectl run my-pod --image=nginx --restart=Never
+
+4. What is a Deployment?
+A Deployment manages Pods automatically and provides:
+scaling
+updates
+self-healing
+Example:
+kubectl create deployment my-deployment --image=nginx --replicas=2
+
+5. What is the purpose of kubectl expose?
+kubectl expose creates a Service to make Pods or Deployments accessible over the network.
+Example:
+kubectl expose deployment my-deployment --type=NodePort --port=80
