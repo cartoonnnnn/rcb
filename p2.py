@@ -156,7 +156,7 @@ sudo docker run -p 8000:5000 myimage:1
 sudo docker login
 
 # Tag Docker Image
-sudo docker tag myimage:1 <your docker username>/dockerimage:1
+sudo docker tag myimage:1 shreejitttt/dockerimage:1
 
 # Check Images
 sudo docker images
