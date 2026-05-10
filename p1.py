@@ -66,3 +66,28 @@ git push -u origin master
 # Password = paste Generated Token
 
 # Verify repository on GitHub
+#viva
+
+1. What is Git?
+
+Git is a distributed version control system used to track changes in files and manage source code efficiently.
+
+2. Difference between Git and GitHub?
+Git → local version control tool.
+GitHub → online platform to host Git repositories.
+
+3. What is the difference between git add and git commit?
+git add → moves files to staging area.
+git commit → permanently saves changes in repository history.
+
+4. What is branching in Git?
+Branching allows developers to work on new features separately without affecting the main code.
+
+Example: git branch add-feature
+
+5. What is the purpose of git push?
+git push uploads local repository commits to a remote repository like GitHub.
+
+Example:
+
+git push -u origin master
