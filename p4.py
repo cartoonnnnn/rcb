@@ -163,3 +163,29 @@ Time Series
 # ---------------------------------------------------
 
 sudo docker compose down
+
+#viva
+1. What is Prometheus?
+Prometheus is an open-source monitoring and alerting tool used to collect and store system metrics as time-series data.
+
+2. What is Grafana?
+Grafana is a visualization tool used to create dashboards and graphs from monitoring data sources like Prometheus.
+
+3. What is scraping in Prometheus?
+Scraping means collecting metrics data from target systems at regular intervals.
+Example from your lab:
+scrape_interval: 15s
+Prometheus collects metrics every 15 seconds.
+
+4. Why do we integrate Prometheus with Grafana?
+Prometheus collects and stores metrics.
+Grafana visualizes those metrics using dashboards and graphs.
+Together they help in monitoring system performance.
+
+5. What is Docker Compose used for in this lab?
+Docker Compose is used to manage multiple containers together using a single docker-compose.yml file.
+Example:
+Prometheus container
+Grafana container
+started together using:
+docker compose up -d
