@@ -259,3 +259,33 @@ Build Now on job1
 # ---------------------------------------------------
 
 sudo systemctl stop jenkins
+
+
+#viva
+1. What is Jenkins?
+Jenkins is an open-source automation server used for Continuous Integration and Continuous Deployment (CI/CD).
+It automates:
+build
+testing
+deployment
+
+2. What is CI/CD?
+CI (Continuous Integration) → automatically integrates and tests code changes frequently.
+CD (Continuous Deployment/Delivery) → automatically deploys application after successful testing.
+
+3. What is a Jenkins Pipeline?
+A Jenkins Pipeline is a sequence of automated steps used to build, test, and deploy applications.
+Example workflow:
+job1 → job2 → job-git → pipeline-job
+
+4. Why is Git integrated with Jenkins?
+Git is integrated with Jenkins so Jenkins can:
+fetch latest source code
+trigger builds automatically
+automate testing and deployment
+
+5. What is the purpose of Build Triggers in Jenkins?
+Build Triggers automatically start another job after one job finishes successfully.
+Example:
+job1 completes
+job2 starts automatically
