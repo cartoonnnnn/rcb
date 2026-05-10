@@ -163,3 +163,37 @@ sudo docker images
 
 # Push Image to Docker Hub
 sudo docker push shreejitttt/dockerimage:1
+
+#viva
+1. What is Docker?
+Docker is a containerization platform used to package applications with all dependencies so they run consistently on any system.
+
+2. Difference between Docker Image and Docker Container?
+Docker Image → read-only template containing application and dependencies.
+Docker Container → running instance of a Docker image.
+Example:
+docker run nginx
+Here:
+nginx = image
+running instance = container
+
+3. What is the use of a Dockerfile?
+A Dockerfile contains instructions to automatically build a Docker image.
+Example:
+FROM python:3-alpine3.15
+COPY . /app
+RUN pip install flask
+
+4. What is the difference between docker run and docker start?
+docker run → creates and starts a new container.
+docker start → starts an existing stopped container.
+
+5. What is port mapping in Docker?
+Port mapping connects container ports with host machine ports.
+Example:
+docker run -p 8000:80 nginx
+Meaning:
+Host port = 8000
+Container port = 80
+Access application using:
+http://localhost:8000
